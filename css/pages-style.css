@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Security';
+  font-weight: 400;
+  font-style: normal;
+  src: local("Security");
+  src: url("./font/security/text-security-disc.eot"), url("./font/security/text-security-disc.woff"), url("./font/security/text-security-disc.ttf"), url("./font/security/text-security-disc.svg") format("svg"); }
+
+@font-face {
+  font-family: 'GothamPro';
+  src: url("./font/GothamPro/GothamPro.eot?") format("eot"), url("./font/GothamPro/GothamPro.otf") format("opentype"), url("./font/GothamPro/GothamPro.woff") format("woff"), url("./font/GothamPro/GothamPro.ttf") format("truetype"), url("./font/GothamPro/GothamPro.svg#GothamPro") format("svg"); }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%; }
+
+div,
+p {
+  margin: 0;
+  padding: 0; }
+
+input {
+  border: 0;
+  border-bottom: 1px solid #939393;
+  padding: 10px;
+  padding-left: 30px;
+  font-family: "GothamPro", sans-serif;
+  font-size: 20px;
+  line-height: 19px;
+  width: 100%; }
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: #939393; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #939393; }
+
+::-moz-placeholder {
+  color: #939393; }
+
+::-ms-input-placeholder {
+  color: #939393; }
+
+::placeholder {
+  color: #939393; }
+
+input:focus {
+  border: 0;
+  border-bottom: 1px solid red; }
+
+.base {
+  font-family: "GothamPro", sans-serif;
+  background: transparent url("../img/logo-bg.svg") center center no-repeat;
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+  background-size: 50% auto;
+  /* This is what makes the background image rescale based on its container's size */
+  height: 100vh;
+  padding-top: 220px; }
+  @media screen and (max-width: 640px) {
+    .base {
+      padding-top: 130px;
+      background: transparent; } }
+
+.info {
+  width: 645px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "GothamPro", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 100%; }
+  .info__header {
+    font-weight: 500;
+    font-size: 18px;
+    color: #5f33c9;
+    padding-top: 40px;
+    padding-bottom: 20px; }
+  .info__text {
+    font-size: 18px; }
+
+.mobile-logo {
+  display: none;
+  margin-bottom: 40px; }
+  @media screen and (max-width: 640px) {
+    .mobile-logo {
+      display: block; } }
+
+.mobile-footer {
+  display: none;
+  font-size: 12px;
+  text-align: center;
+  margin-top: auto; }
+  @media screen and (max-width: 640px) {
+    .mobile-footer {
+      display: block; } }
+  .mobile-footer__text {
+    margin-bottom: 20px; }
+  .mobile-footer__copyright {
+    margin-bottom: 30px; }
+
+a {
+  text-decoration: none; }
+
+.banner img {
+  width: 100%; }

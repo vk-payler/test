@@ -1,0 +1,226 @@
+@font-face {
+  font-family: 'Security';
+  font-weight: 400;
+  font-style: normal;
+  src: local("Security");
+  src: url("./font/security/text-security-disc.eot"), url("./font/security/text-security-disc.woff"), url("./font/security/text-security-disc.ttf"), url("./font/security/text-security-disc.svg") format("svg"); }
+
+@font-face {
+  font-family: 'GothamPro';
+  src: url("./font/GothamPro/GothamPro.eot?") format("eot"), url("./font/GothamPro/GothamPro.otf") format("opentype"), url("./font/GothamPro/GothamPro.woff") format("woff"), url("./font/GothamPro/GothamPro.ttf") format("truetype"), url("./font/GothamPro/GothamPro.svg#GothamPro") format("svg"); }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%; }
+
+div,
+p {
+  margin: 0;
+  padding: 0; }
+
+.content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  content-wrap: nowrap;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  height: 100vh;
+  min-height: 500px; }
+
+input {
+  border: 0;
+  border-bottom: 1px solid #939393;
+  padding: 10px;
+  padding-left: 30px;
+  font-family: "GothamPro", sans-serif;
+  font-size: 20px;
+  line-height: 19px;
+  width: 100%; }
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: #939393; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #939393; }
+
+::-moz-placeholder {
+  color: #939393; }
+
+::-ms-input-placeholder {
+  color: #939393; }
+
+::placeholder {
+  color: #939393; }
+
+input:focus {
+  border: 0;
+  border-bottom: 1px solid red; }
+
+.base {
+  position: relative;
+  font-family: "GothamPro", sans-serif;
+  background: transparent url("../img/logo-bg.svg") center center no-repeat;
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+  background-attachment: fixed;
+  /* This is what makes the background image rescale based on its container's size */
+  height: 100vh;
+  padding-top: 220px; }
+  @media screen and (max-width: 640px) {
+    .base {
+      padding-top: 130px;
+      background: transparent; } }
+
+.info {
+  width: 420px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "GothamPro", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 100%; }
+  .info__header {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 17px;
+    color: #5f33c9;
+    padding-top: 40px;
+    padding-bottom: 20px; }
+  .info__text {
+    font-size: 18px;
+    line-height: 17px; }
+
+.mobile-logo {
+  display: none;
+  margin-bottom: 40px; }
+  @media screen and (max-width: 640px) {
+    .mobile-logo {
+      display: block; } }
+
+.mobile-footer {
+  display: none;
+  font-size: 12px;
+  text-align: center;
+  margin-top: auto; }
+  @media screen and (max-width: 640px) {
+    .mobile-footer {
+      display: block; } }
+  .mobile-footer__text {
+    margin-bottom: 20px; }
+  .mobile-footer__copyright {
+    margin-bottom: 30px; }
+
+.mainbar {
+  padding-left: 105px;
+  padding-top: 63px; }
+
+.header__logo {
+  width: 40px;
+  height: 40px;
+  background: grey; }
+
+.sidebar {
+  background: #f7f7f7;
+  padding-top: 75px;
+  padding-bottom: 73px;
+  padding-left: 50px;
+  font-family: "GothamPro", sans-serif; }
+  .sidebar__secure-pay {
+    padding-left: 40px;
+    position: relative; }
+    .sidebar__secure-pay-header {
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 10px;
+      margin-bottom: 10px; }
+      .sidebar__secure-pay-header:before {
+        content: url("img/mir.svg");
+        z-index: 1000;
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        background: green;
+        opacity: 0.3;
+        left: 0; }
+    .sidebar__secure-pay-text {
+      font-size: 10px;
+      line-height: 10px;
+      margin-bottom: 17px; }
+      .sidebar__secure-pay-text a {
+        text-decoration: none; }
+  .sidebar__details {
+    font-size: 20px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 30px; }
+  .sidebar__shop {
+    font-size: 18px;
+    line-height: 17px;
+    margin-bottom: 10px;
+    margin-bottom: 30px; }
+  .sidebar__text {
+    font-size: 16px;
+    line-height: 15px;
+    margin-bottom: 15px; }
+  .sidebar__order {
+    margin-bottom: 15px; }
+  .sidebar__to-pay {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 29px;
+    margin-bottom: 15px;
+    color: #4762b2; }
+  .sidebar__protected {
+    font-size: 16px;
+    line-height: 15px;
+    margin-bottom: 35px; }
+  .sidebar__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-right: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center; }
+  .sidebar__footer {
+    position: absolute;
+    bottom: 0;
+    bottom: 73px; }
+  .sidebar__logo {
+    margin-bottom: 44px; }
+    .sidebar__logo img {
+      width: 284px;
+      margin-bottom: 32px; }

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Payler</title>
+    <div class="main-block">
+      <div class="merchantOrderId">Платеж № {{ 21 }}</div>
+      <div class="header-wrap">
+        <div class="amount-wrapper">
+          <div class="amount">
+            <p class="transactionAmount">Сумма {{ 0 }} <span class="currencyCode">{{ 1 }}</span></p>
+          </div>
+          <div class="amount__remainder-sum">
+            <p class="amountOfRefunds">Остаток {{3}} <span class="currencyCode">{{ 1 }}</span></p>
+          </div>
+        </div>
+        <div class="header"><img src="./img/logo-payler.svg" alt="" /></div>
+      </div>
+      <div class="date">Дата платежа: {{2}}</div>
+      <div class="pay-details__wrapper">
+        <div class="pay-details__header">Данные платежа</div>
+        <div class="pay-details__item transactionStatus">
+          <div class="pay-details__left">Статус</div>
+          <div class="pay-details__right">{{ 4 }}</div>
+        </div>
+        <div class="pay-details__item rekvisits">
+          <div class="pay-details__left">Реквизиты</div>
+          <div class="pay-details__right pay-details__right--container">
+            <div class="pay-details__right-wrap bankCountryCode">
+              <div class="pay-details__right--caption">Страна</div>
+              <div class="pay-details__right--info">{{ 5 }}</div>
+            </div>
+            <div class="pay-details__right-wrap bankName">
+              <div class="pay-details__right--caption">Банк</div>
+              <div class="pay-details__right--info empty">{{ 6 }}</div>
+            </div>
+            <div class="pay-details__right-wrap panmask">
+              <div class="pay-details__right--caption">Карта</div>
+              <div class="pay-details__right--info">{{ 7 }}</div>
+            </div>
+            <div class="pay-details__right-wrap cardHolder">
+              <div class="pay-details__right--caption">Имя Владельца</div>
+              <div class="pay-details__right--info">{{ 8 }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="pay-details__item processingName">
+          <div class="pay-details__left">Процессинг</div>
+          <div class="pay-details__right">{{ 9 }}</div>
+        </div>
+        <div class="pay-details__item transactionType">
+          <div class="pay-details__left">Авторизация</div>
+          <div class="pay-details__right">{{ 10 }}</div>
+        </div>
+        <div class="pay-details__item transactionType">
+          <div class="pay-details__left">RRN</div>
+          <div class="pay-details__right">{{ 11 }}</div>
+        </div>
+        <div class="pay-details__item userLocation">
+          <div class="pay-details__left">Положение <br />плательщика</div>
+          <div class="pay-details__right">{{ 12 }}</div>
+        </div>
+        <div class="pay-details__item product" style="display:{{13}}">
+          <div class="pay-details__left">Описание</div>
+          <div class="pay-details__right">{{ 14 }}</div>
+        </div>
+        <div class="pay-details__item userData" style="display:{{15}}">
+          <div class="pay-details__left">Пользовательские параметры</div>
+          <div class="pay-details__right">{{ 16 }}</div>
+        </div>
+        <div class="pay-details__item userEnteredParams" style="display:{{17}}">
+          <div class="pay-details__left">Доп. кастомные <br />параметры</div>
+          <div class="pay-details__right">{{ 18 }}</div>
+        </div>
+        <div class="pay-details__item userEmail" style="display:{{19}}">
+          <div class="pay-details__left">E-mail пользователя</div>
+          <div class="pay-details__right">{{ 20 }}</div>
+        </div>
+      </div>
+      <div class="pay-details__wrapper pay-details__wrapper--padding">
+        <div class="pay-details__header">История операций</div>
+        <div class="pay-history__item">
+          <div class="pay-history__date createdAt">
+            {{ date }}<span>{{ status }} Возврат денежных средств в размере 300,00 ₽ отклонен</span>
+          </div>
+          <div class="pay-history__dots">
+            <div class="pay-history__info paylerError">Ошибка: <span>{{ paylerError }}</span></div>
+          </div>
+        </div>
+        <div class="pay-history__item">
+          <div class="pay-history__date createdAt">
+            {{ date }}<span>{{ status }} Возврат денежных средств в размере 300,00 ₽ отклонен</span>
+          </div>
+          <div class="pay-history__dots">
+            <div class="pay-history__info paylerError">Ошибка: <span>{{ paylerError }}</span></div>
+          </div>
+        </div>
+        <div class="pay-history__item">
+          <div class="pay-history__date createdAt">
+            {{ date }}
+            <span>{{ status }} Возврат денежных средств в размере 300,00 ₽ отклонен</span>
+          </div>
+          <div class="pay-history__dots">
+            <div class="pay-history__info paylerError">Ошибка: <span>{{ paylerError }}</span></div>
+          </div>
+        </div>
+        <div class="pay-history__item">
+          <div class="pay-history__date createdAt">
+            {{ date }}<span>{{ status }} Возврат денежных средств в размере 300,00 ₽ отклонен</span>
+          </div>
+          <div class="pay-history__dots">
+            <div class="pay-history__info paylerError">Ошибка: <span>{{ paylerError }}</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </head>
+  <body></body>
+</html>

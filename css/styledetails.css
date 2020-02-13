@@ -1,0 +1,392 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&subset=cyrillic,cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700&subset=cyrillic");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+:root {
+  font-size: 16px;
+  -webkit-font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures;
+          font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures;
+  /* Font */
+  --fh-font-family: "Source Sans Pro", sans-serif;
+  --fh-font-size: 15px;
+  --fh-font-color: rgb(40, 40, 40);
+  /* Borders */
+  --fh-border-radius: 3px;
+  --fh-border-width: 1px;
+  --fh-border-style: solid;
+  --fh-border-color: rgb(200, 200, 200);
+  /* Inputs, Textareas, Select, Option */
+  --fh-input-height: 40px;
+  --fh-input-width: 100%;
+  --fh-input-max-width: 400px;
+  --fh-input-bg-color: rgb(250, 250, 250);
+  --fh-focus-bg-color: var(--fh-input-bg-color);
+  --fh-focus-border-color: #000;
+  --fh-focus-font-color: var(--fh-font-color);
+  /* Select Vendor Styling */
+  --fh-select-vendor-styling: none;
+  /* comment this out to maintain vendor styling */
+  /* Buttons & Input Submits */
+  --fh-button-height: 40px;
+  --fh-button-width: 100%;
+  --fh-button-max-width: 200px;
+  --fh-button-font-color: var(--fh-font-color);
+  --fh-button-bg-color: rgba(255, 219, 58, 0.3);
+  --fh-button-hover-bg-color: rgb(255, 219, 58);
+  --fh-button-hover-font-color: var(--fh-font-color);
+  /* Layout */
+  --fh-layout-display: block;
+  --fh-layout-margin: 10px auto;
+  /* change to "10px auto" to center */
+  --fh-layout-text-align: center; }
+
+html,
+body {
+  font-family: "arach", serif !important; }
+
+/* @font-face {
+  font-family: 'MyFontFamily';
+  src: url('../fonts/myfont-webfont.eot?') format('eot'),
+    url('../fonts/myfont-webfont.woff') format('woff'),
+    url('../fonts/myfont-webfont.ttf') format('truetype'),
+    url('../fonts/myfont-webfont.svg#svgFontName') format('svg');
+} */
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                        supported by Chrome and Opera */ }
+
+/* Mozilla based browsers */
+::-moz-selection {
+  background-color: #ffa;
+  color: #000; }
+
+/* Works in Safari */
+::-moz-selection {
+  background-color: #ffa;
+  color: #000; }
+::selection {
+  background-color: #ffa;
+  color: #000; }
+
+::-webkit-input-placeholder {
+  color: #3c3c3c; }
+
+::-moz-placeholder {
+  color: #3c3c3c;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: #3c3c3c; }
+
+::-ms-input-placeholder {
+  color: #3c3c3c; }
+
+::placeholder {
+  color: #3c3c3c; }
+
+.textarea {
+  resize: none;
+  resize: vertical;
+  resize: horizontal;
+  resize: both; }
+
+.nowrap {
+  white-space: nowrap; }
+
+.hyphens {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  /* Non standard for WebKit */
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+      hyphens: auto; }
+
+.empty:empty:before {
+  content: "\200b"; }
+
+.ul {
+  font-size: 0; }
+
+.li {
+  font-size: 12px; }
+
+.header {
+  font-family: "arach", serif; }
+
+@font-face {
+  font-family: "arach";
+  src: url("../fonts/aaargh-webfont.woff2") format("woff2"), url("../fonts/aaargh-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/* VARIABLES */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* button {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 11px;
+} */
+h1 {
+  font-size: 4rem; }
+
+h2 {
+  font-size: 2.55rem; }
+
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 1.5rem; }
+
+h5 {
+  font-size: 0.875rem; }
+
+h6 {
+  font-size: 0.6rem; }
+
+caption {
+  font-size: 0.875rem; }
+
+@media screen and (max-width: 750px) {
+  :root {
+    font-size: 0.95rem;
+    display: var(--fh-layout-display); } }
+
+@media screen and (max-width: 700px) {
+  :root {
+    font-size: 0.875rem; } }
+
+@media screen and (max-width: 650px) {
+  :root {
+    font-size: 0.8rem; } }
+
+@media screen and (max-width: 600px) {
+  :root {
+    font-size: 0.75rem; } }
+
+@media screen and (max-width: 550px) {
+  :root {
+    font-size: 0.7rem; } }
+
+@media screen and (max-width: 500px) {
+  :root {
+    font-size: 0.625rem; } }
+
+@media screen and (max-width: 450px) {
+  :root {
+    font-size: 0.55rem; } }
+
+@media screen and (max-width: 400px) {
+  :root {
+    font-size: 0.5rem; } }
+
+/* 
+
+first
+
+
+Color Palette Image
+#554411
+#ccaa55
+#eedd99
+#eeeecc
+#996633
+ 
+dull
+#665500
+#ffcc11
+#ffee77
+#ffeeaa
+#cc6600
+ 
+vibrant
+
+second
+
+
+Color Palette Image
+#554422
+#aaaa55
+#eedd99
+#eeddbb
+#997744
+ 
+dull
+#665500
+#ddcc22
+#ffee77
+#ffddaa
+#bb8811
+ 
+vibrant
+
+
+
+third
+
+
+
+444422
+#aaaa66
+#eeeeee
+#ccccaa
+#997755
+ 
+dull
+#664411
+#ddcc33
+#eeeeee
+#dddd88
+#bb7722
+ 
+vibrant
+
+ */
+.fixed-bg {
+  background-color: #cfc0be; }
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.contact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.direct-contact-container {
+  width: 50%; }
+
+blockquote {
+  position: relative;
+  display: block;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #666;
+  border: solid 1px #98a81b;
+  margin-bottom: 35px;
+  margin-top: 35px; }
+
+.blockquote-background {
+  background: #f5f6e8;
+  padding: 20px; }
+
+blockquote::before {
+  content: "\201C";
+  background-color: #fff;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  font-size: 60px;
+  font-weight: bold;
+  color: #98a81b;
+  text-align: center;
+  line-height: 93px;
+  position: absolute;
+  left: -30px;
+  top: -30px; }
+
+.det-text-wrap {
+  padding: 50px;
+  padding-top: 0; }
+  .det-text-wrap ul,
+  .det-text-wrap li {
+    font-family: "Open Sans", sans-serif;
+    color: #222830;
+    line-height: 1.8;
+    list-style-type: circle;
+    margin-left: 15px; }
+
+ul {
+  margin-bottom: 20px; }
+
+li {
+  margin-bottom: 10px; }
+
+img {
+  margin-bottom: 20px; }
+
+.det-text {
+  font-family: "Open Sans", sans-serif;
+  color: #222830;
+  margin-bottom: 20px;
+  line-height: 1.4; }
+
+.footer-top-big {
+  height: 280px; }

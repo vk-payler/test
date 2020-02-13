@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>pay-back</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="payments" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="payments_1920" transform="translate(-994.000000, -348.000000)" fill="#ACC6C9" fill-rule="nonzero">
+            <g id="Artboard" transform="translate(368.000000, 320.000000)">
+                <g id="Payment" transform="translate(557.000000, 0.000000)">
+                    <g id="Stacked-Group" transform="translate(16.000000, 26.000000)">
+                        <g id="Recurrent" transform="translate(53.000000, 2.000000)">
+                            <path d="M4.82842712,6 L6.12132034,7.29289322 C6.51184464,7.68341751 6.51184464,8.31658249 6.12132034,8.70710678 C5.73079605,9.09763107 5.09763107,9.09763107 4.70710678,8.70710678 L1,5 L4.70710678,1.29289322 C5.09763107,0.902368927 5.73079605,0.902368927 6.12132034,1.29289322 C6.51184464,1.68341751 6.51184464,2.31658249 6.12132034,2.70710678 L4.82842712,4 L9,4 C11.7614237,4 14,6.23857625 14,9 C14,11.7614237 11.7614237,14 9,14 L4,14 C3.44771525,14 3,13.5522847 3,13 L3,13 C3,12.4477153 3.44771525,12 4,12 L9,12 C10.6568542,12 12,10.6568542 12,9 C12,7.34314575 10.6568542,6 9,6 L4.82842712,6 Z" id="Combined-Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
